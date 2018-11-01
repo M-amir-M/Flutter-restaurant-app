@@ -1,4 +1,4 @@
-# online_store
+# restaurant order app with flutter
 
 A new Flutter project.
 
