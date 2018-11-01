@@ -1,0 +1,55 @@
+import 'package:online_store/store/actions/products_actions.dart';
+
+
+List productsReducer( currentProducts, action) {
+  if (action is GetProducts) {
+    currentProducts =  [
+      {
+        "id": 1,
+        "title": "قرمه سبزی",
+        "description":
+            " شامل گوشت گوساله و برنج ایرانی و روغن زیتون شامل گوشت گوساله و برنج ایرانی و روغن زیتون",
+        "price": 10000,
+        "thumbnail": "plate1.png"
+      },
+      {
+        "id": 2,
+        "title": "جوجه کباب",
+        "description": "شامل گوشت گوساله و برنج ایرانی و روغن زیتون",
+        "price": 10000,
+        "thumbnail": "plate2.png"
+      },
+      {
+        "id": 3,
+        "title": "فسنجان",
+        "description": "شامل گوشت گوساله و برنج ایرانی و روغن زیتون",
+        "price": 10000,
+        "thumbnail": "plate3.png"
+      },
+      {
+        "id": 4,
+        "title": " پیتزا",
+        "description": "شامل پنیر و قارچ و گوجه و گوشت و سس",
+        "price": 10000,
+        "thumbnail": "plate4.png"
+      },
+      {
+        "id": 5,
+        "title": "کباب برگ",
+        "description": "شامل گوشت گوساله و برنج ایرانی و روغن زیتون",
+        "price": 10000,
+        "thumbnail": "plate5.png"
+      },
+      {
+        "id": 6,
+        "title": "چلو گوشت",
+        "description": "شامل گوشت گوساله و برنج ایرانی و روغن زیتون",
+        "price": 10000,
+        "thumbnail": "plate6.png"
+      }
+    ];
+    return currentProducts;
+  }  else {
+    return currentProducts;
+  }
+}
